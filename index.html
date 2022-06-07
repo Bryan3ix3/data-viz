@@ -39,11 +39,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding-bottom: 50px;
       }
       .chartBox {
         width: 700px;
         padding: 20px;
         border-radius: 20px;
+      }
+
+      section {
+          margin-top: 20px;
       }
     </style>
 </head> 
@@ -58,8 +63,10 @@
             <canvas id="chart2"></canvas>
         </div>
     </div>
-    
-</body>
+    <section>
+        <a href="https://canvas.uw.edu/courses/1548017/assignments/7267503?submitted=2">Data collected as part of Info 474 Data Viz course at UW</a>
+    </section>
+    </body>
 <script>
     
     d3.csv("./KHOU.csv").then(function(data) {
